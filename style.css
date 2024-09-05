@@ -112,3 +112,9 @@ a {
 #green {
   grid-area: greenHome;
 }
+
+.footer {
+  padding: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
