@@ -34,6 +34,17 @@ a {
   }
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger .bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  border-radius: 30px;
+  margin: 3px;
+}
 .aboutMe a:hover{
   color: orange;
   transition: 0.8s;
@@ -117,4 +128,32 @@ a {
   padding: 3.5rem;
   text-align: center;
   font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 768px){
+  .gridLayout {
+    grid-template-areas:
+      'tower tower'
+      'old flower'
+      'modern serious'
+      'landet landet'
+      'business avm'
+      'greenHome greenHome';
+  }
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    padding: 30px;
+  }
+  .container{
+    max-width: 90%;
+  }
+  .navbar .aboutMe {
+    display: none;
+  }
+  .footer {
+    padding: 30px;
+  }
 }
